@@ -1,12 +1,12 @@
 {
   "name": "react-cron",
   "version": "0.0.1",
-  "description": "",
+  "description": "react-cron 定时表达式",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "authors": {
-    "name": "",
-    "email": ""
+    "name": "senter.chen",
+    "email": "chensongtao5@gmail.com"
   },
   "repository": "/react-cron",
   "scripts": {

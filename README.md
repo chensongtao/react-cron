@@ -1,11 +1,16 @@
-# @umi-material/react-cron
+# react-cron
 
 
 
 ## Usage
 
 ```sh
-umi block https://github.com//tree/master/react-cron
+    onChange
+    value
+    style
+    className
+    lang // 支持zh_CN/en_US
+    type={['second', 'minute', 'hour', 'day', 'month', 'week']} // 可选择
 ```
 
 ## LICENSE
