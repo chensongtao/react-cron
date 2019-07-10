@@ -4,6 +4,7 @@ export default {
     themeConfig: { mode: 'light' },
     base: '/'
   },
+  
   esm: 'rollup',
   cjs: 'rollup',
   umd: true,
