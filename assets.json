@@ -1,8 +1,8 @@
 {
-  "vendors.css": "./static/css/vendors.df7ff8fc769d0de000bc.css",
-  "vendors.js": "./static/js/vendors.7bbcb475.js",
-  "app.js": "./static/js/app.df7ff8fc769d0de000bc.js",
-  "src-index.css": "./static/css/src-index.df7ff8fc769d0de000bc.css",
-  "src-index.js": "./static/js/src-index.1b378053.js",
-  "index.html": "./index.html"
+  "vendors.css": "/react-cron/static/css/vendors.2321f094ff360897ed56.css",
+  "vendors.js": "/react-cron/static/js/vendors.a9c1a022.js",
+  "app.js": "/react-cron/static/js/app.2321f094ff360897ed56.js",
+  "src-index.css": "/react-cron/static/css/src-index.2321f094ff360897ed56.css",
+  "src-index.js": "/react-cron/static/js/src-index.1b378053.js",
+  "index.html": "/react-cron/index.html"
 }
