@@ -1,0 +1,27 @@
+{
+  "name": "react-cron",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "authors": {
+    "name": "",
+    "email": ""
+  },
+  "repository": "/react-cron",
+  "scripts": {
+    "dev": "umi-lib doc dev",
+    "build": "umi-lib build"
+  },
+  "peerDependencies": {
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "umi-library": "^1.1.1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "father": "^2.13.4"
+  }
+}
