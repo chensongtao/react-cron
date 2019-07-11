@@ -11,7 +11,8 @@
   "repository": "/react-cron",
   "scripts": {
     "dev": "umi-lib doc dev",
-    "build": "umi-lib build"
+    "build": "umi-lib build",
+    "deploy": "npx father doc build && npx father doc deploy"
   },
   "peerDependencies": {
     "react": "16.x"

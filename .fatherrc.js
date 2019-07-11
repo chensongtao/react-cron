@@ -1,8 +1,8 @@
 export default {
-  entry: 'src/',
+  entry: '/src',
   doc: {
     themeConfig: { mode: 'light' },
-    base: '/'
+    base: '/react-cron/',
   },
   
   esm: 'rollup',
