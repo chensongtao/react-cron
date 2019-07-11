@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react';
 import { Dropdown, Input } from 'antd';
 import Cron from '../Cron';
-import 'antd/dist/antd.css'
+
+
+
 class InputCron extends PureComponent {
   constructor(props) {
     super(props);
@@ -22,6 +24,7 @@ class InputCron extends PureComponent {
   }
   render() {
     const { dateVisible, value } = this.state;
+    const { style, lang, type, width} = this.props;
     return (
         <Dropdown
             trigger={['click']}
@@ -32,13 +35,13 @@ class InputCron extends PureComponent {
             <Cron
                 onChange={this.handleChange}
                 value={value}
-                style={{ width: 576 }}
-                lang='zh_CN'
-                type={['second', 'minute', 'hour', 'day', 'month', 'week']}
+                style={style}
+                lang={lang}
+                type={type}
             />
             )}
         >
-            <Input readOnly value={value} style={{ width: 576 }}/>
+            <Input readOnly value={value} style={{ width }}/>
         </Dropdown>
     );
   }

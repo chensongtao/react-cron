@@ -2,6 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import { Tabs, Radio, Checkbox, Row, Col, InputNumber, Select } from 'antd';
 import getI18n from './i18n';
+import { valudateCron } from '../utils';
 import './index.less';
 
 const { Option } = Select;
@@ -23,7 +24,9 @@ class CRON extends React.Component {
   constructor(props) {
     super(props);
     const { value = '0 0 0 * * ?', type = ['minute', 'hour', 'day', 'month'] } = props;
-    const cronArr = value.split(' ');
+    const values = valudateCron(value) ? value : '0 0 0 * * ?';
+
+    const cronArr = values.split(' ');
     const time = ['second', 'minute', 'hour', 'day', 'month', 'week'];
     let TabsActiveKey = 1;
     for (let i = 0; i < time.length; i++) {
@@ -721,7 +724,7 @@ class CRON extends React.Component {
       TabsActiveKey,
       type,
     } = this.state;
-    const { style, className, lang } = this.props;
+    const { style={ width: 576 }, className, lang="zh_CN"  } = this.props;
     const i18n = getI18n(lang); // 国际化
     const Cls = classnames('cron', className);
 

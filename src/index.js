@@ -1,8 +1,7 @@
 import Cron from './Cron'
 import InputCron from './InputCron';
 
-const Crons = {
-    Cron,
+export {
     InputCron,
+    Cron,
 }
-export default Crons;

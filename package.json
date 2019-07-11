@@ -1,6 +1,6 @@
 {
   "name": "react-crons",
-  "version": "1.1.0",
+  "version": "1.4.3",
   "description": "react-cron 定时表达式",
   "keywords": [
     "react-cron",
@@ -21,17 +21,20 @@
   "scripts": {
     "dev": "umi-lib doc dev",
     "build": "umi-lib build",
-    "deploy": "npx father doc build && npx father doc deploy"
+    "deploy": "father doc build && father doc deploy"
   },
   "peerDependencies": {
-    "react": "16.x"
-  },
-  "license": "MIT",
-  "dependencies": {
+    "react": "16.x",
     "antd": "^3.20.1",
     "classnames": "^2.2.6",
     "father": "^2.13.4",
-    "react-crons": "^1.0.0",
     "umi-library": "^1.1.1"
+  },
+  "license": "MIT",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
   }
 }
