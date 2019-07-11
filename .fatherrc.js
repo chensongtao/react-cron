@@ -1,11 +1,9 @@
 export default {
-  entry: '/src',
+  entry: '/src/index',
   doc: {
     themeConfig: { mode: 'light' },
     base: '/react-cron/',
   },
-  
   esm: 'rollup',
   cjs: 'rollup',
-  umd: true,
 }

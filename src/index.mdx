@@ -1,9 +1,12 @@
-import InputCron from './InputCron.js';
+import InputCron from './InputCron';
+import Cron from './Cron';
 
-# CRON表达式.
-
-CRON表达式
-
-
-# 下拉框
+# 1.带Input and Dropdown的cron表达式
 <InputCron />
+
+# 2.cron表达式
+<Cron 
+    style={{ width: 576 }}
+    lang='zh_CN'
+    type={['second', 'minute', 'hour', 'day', 'month', 'week']}
+/>
