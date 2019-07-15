@@ -19,6 +19,11 @@ class InputCron extends PureComponent {
       onChange(value);
     }
   }
+  clear = () => {
+    this.setState({
+      value: null,
+    })
+  }
   render() {
     const { dateVisible, value } = this.state;
     const { style, lang, type, width} = this.props;

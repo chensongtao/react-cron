@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import { Tabs, Radio, Checkbox, Row, Col, InputNumber, Select } from 'antd';
 import getI18n from './i18n';
-import { valudateCron } from '../utils';
+import { cronValidate } from '../utils';
 import './index.less';
 
 const { Option } = Select;
@@ -23,9 +23,8 @@ for (let i = 1; i < 13; i++) { monthOptions.push(i.toString()); }
 class CRON extends React.Component {
   constructor(props) {
     super(props);
-    const { value = '0 0 0 * * ?', type = ['minute', 'hour', 'day', 'month'] } = props;
-    const values = valudateCron(value) ? value : '0 0 0 * * ?';
-
+    const { value , type = ['minute', 'hour', 'day', 'month'] } = props;
+    const values = value && value !== '' && cronValidate(value) ? value : '0 0 0 * * ?';
     const cronArr = values.split(' ');
     const time = ['second', 'minute', 'hour', 'day', 'month', 'week'];
     let TabsActiveKey = 1;
