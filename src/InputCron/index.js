@@ -1,13 +1,10 @@
 import React, { PureComponent } from 'react';
 import { Dropdown, Input } from 'antd';
 import Cron from '../Cron';
-
-
-
 class InputCron extends PureComponent {
   constructor(props) {
     super(props);
-    const { value = '0 0/30 * * * ?' } = props;
+    const { value } = props;
     this.state = {
       dateVisible: false,
       value,

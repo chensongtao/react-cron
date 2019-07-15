@@ -3,7 +3,7 @@ const en = {
   from: 'From',
   from1: ' from',
   Every: ' every',
-  doOne: 'to do one time',
+  doOne: ' to do one time',
   appoint: 'Appoint',
   noappoint: 'No Appoint',
 
@@ -36,7 +36,7 @@ const en = {
   monthend: 'The last day of the month',
 
   week: 'Week',
-  week1: 'week',
+  week1: ' week',
   week2: '，week',
   week3: 'week',
   monthweek: 'Every month number',
