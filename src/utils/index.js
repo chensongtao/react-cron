@@ -303,7 +303,7 @@ function checkIncrementField(value, minimal, maximal) {
 
 
 function checkListField(value, minimal, maximal) {
-  var st = value.split(",");
+  var st = value.split(",").sort((x, y) => Number(x) - Number(y));
 
   var values = new Array(st.length);
 
