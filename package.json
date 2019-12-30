@@ -1,6 +1,6 @@
 {
   "name": "react-crons",
-  "version": "2.0.1",
+  "version": "2.2.0",
   "description": "react-cron 定时表达式",
   "keywords": [
     "react-cron",
