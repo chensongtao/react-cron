@@ -153,18 +153,9 @@ function checkMonthsField(monthsField) {
         monthsField = StringUtils.replace( monthsField, "NOV", "11" );
         monthsField = StringUtils.replace( monthsField, "DEC", "12" );*/
 
-  monthsField.replace("JAN", "1");
-  monthsField.replace("FEB", "2");
-  monthsField.replace("MAR", "3");
-  monthsField.replace("APR", "4");
-  monthsField.replace("MAY", "5");
-  monthsField.replace("JUN", "6");
-  monthsField.replace("JUL", "7");
-  monthsField.replace("AUG", "8");
-  monthsField.replace("SEP", "9");
-  monthsField.replace("OCT", "10");
-  monthsField.replace("NOV", "11");
-  monthsField.replace("DEC", "12");
+  ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'].forEach((e, i) => {
+    monthsField = monthsField.replace(e, i + 1);
+  });
 
   return checkField(monthsField, 1, 31);
 }
@@ -178,13 +169,9 @@ function checkDayOfWeekField(dayOfWeekField) {
         dayOfWeekField = StringUtils.replace( dayOfWeekField, "FRI", "6" );
         dayOfWeekField = StringUtils.replace( dayOfWeekField, "SAT", "7" );*/
 
-  dayOfWeekField.replace("SUN", "1");
-  dayOfWeekField.replace("MON", "2");
-  dayOfWeekField.replace("TUE", "3");
-  dayOfWeekField.replace("WED", "4");
-  dayOfWeekField.replace("THU", "5");
-  dayOfWeekField.replace("FRI", "6");
-  dayOfWeekField.replace("SAT", "7");
+  ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'].forEach((e, i) => {
+    dayOfWeekField = dayOfWeekField.replace(e, i + 1);
+  });
 
   if (dayOfWeekField == "?") {
     return true;
